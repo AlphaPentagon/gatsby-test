@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Test Site`,
+    title: `Sonic Blog Site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -9,10 +9,9 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: "blog",
+        path: `${__dirname}/blog`,
       },
-      __key: "images",
     },
   ],
 };
